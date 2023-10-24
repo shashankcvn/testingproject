@@ -1,0 +1,24 @@
+  <!-- <button (click)="updateEvent.emit(box.value)" (click)="updateOld.emit(box1.value)" >Send</button> -->
+  
+  
+ <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae culpa fugiat vel facilis quasi ex harum perferendis libero ullam quaerat officia ipsum voluptatum, non sequi necessitatibus aperiam beatae laudantium mollitia?</p> 
+ 
+ <ng-container *ngFor ="let product of products">
+Product ID:<strong class="text-success">{{product.id}}</strong>&nbsp; &nbsp;
+product Name:<strong class="text-success">{{product.name}}</strong><br><br>
+</ng-container>
+<button (click)="btnClick()">submit</button> -->
+
+
+userName is :<strong>{{userName}}</strong><br>
+
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+          <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+          <input type="text" pInputText placeholder="Username" #uname>         
+      </div><br>
+
+
+      <p-splitButton label="Save" icon="pi pi-file"  styleClass="ui-button-success" (click)="UpdateName(uname)"></p-splitButton>
+

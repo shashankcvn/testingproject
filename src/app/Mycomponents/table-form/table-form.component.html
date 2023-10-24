@@ -1,0 +1,60 @@
+clone<h3 style="color: rgb(226, 116, 43);">{{dataTitle}}</h3>
+<table class="table">
+    <thead>
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">Product_id</th>
+        <th scope="col">Product_name</th>
+        <th scope="col">Product_price</th>
+        <th scope="col" >Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products index as i" >
+        <th scope="row">{{i+1}}</th>
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td (click)="ondelete(i)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+          </svg></td>
+      </tr>
+      
+    </tbody>
+  </table><br>
+
+  <div class="ui-g ui-fluid" style="text-align: center;">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+            <label>Product_id</label><br>
+            <input type="text" pInputText placeholder="Product_id" #id>         
+        </div>
+    </div><br>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"></span>
+            <label for="Product_id">Product_name</label><br>
+            <input type="text" pInputText placeholder="Product_name" #name>   
+            <span class="ui-inputgroup-addon"></span>      
+        </div>
+    </div><br>
+            
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"></span>
+            <label for="Product_id">Product_price</label><br>
+            <input type="text" pInputText placeholder="Product_price" #price>      
+        </div>
+    </div>
+</div><br>
+<div style="text-align: center;">
+    <button type="button" class="btn btn-success" (click)="onAddproduct(id,name,price)">Add Product</button>&nbsp;
+    <button type="button" class="btn btn-primary">Save Product</button>&nbsp;
+    <button type="button" class="btn btn-warning">fetch Product</button>&nbsp; 
+</div>
+
+
+
+

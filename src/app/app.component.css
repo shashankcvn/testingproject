@@ -1,0 +1,48 @@
+input{
+    margin: 10px;
+    width: 40%;
+   
+}
+
+button{
+     padding: 4px;
+    margin-left: 90px;
+
+    position: relative;
+    right: 50px;
+    bottom: 30px;
+    top:5px;
+    background: #5526c5;
+    color: white;
+
+   
+}
+
+.conner{
+     position:relative ;
+     right: 270px;
+}
+
+
+
+.custom{
+
+     position: relative;
+     right: 220px;
+     color : red;
+     
+
+}
+
+sup{
+     color: red;
+}
+
+Form{
+     text-align: center;
+}
+
+.canva{
+     position: relative;
+     right :265px
+}
